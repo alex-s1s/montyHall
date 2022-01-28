@@ -6,9 +6,12 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function jogo() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [portas, setPortas] = useState([]);
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     const portas = +router.query.portas;
     const temPresente = +router.query.temPresente;
